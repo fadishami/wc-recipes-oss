@@ -1550,16 +1550,7 @@
     graceful-fs "^4.2.4"
     source-map "^0.6.0"
 
-"@jest/test-result@^24.9.0":
-  version "24.9.0"
-  resolved "https://registry.npmjs.org/@jest/test-result/-/test-result-24.9.0.tgz"
-  integrity sha512-XEFrHbBonBJ8dGp2JmF8kP/nQI/ImPpygKHwQ/SY+es59Z3L5PI4Qb9TQQMAEeYsThG1xF0k6tmG0tIKATNiiA==
-  dependencies:
-    "@jest/console" "^24.9.0"
-    "@jest/types" "^24.9.0"
-    "@types/istanbul-lib-coverage" "^2.0.0"
-
-"@jest/test-result@^26.6.2":
+"@jest/test-result@26.6.2", "@jest/test-result@^26.6.2":
   version "26.6.2"
   resolved "https://registry.npmjs.org/@jest/test-result/-/test-result-26.6.2.tgz"
   integrity sha512-5O7H5c/7YlojphYNrK02LlDIV2GNPYisKwHm2QTKjNZeEzezCbwYs9swJySv2UfPMyZ0VdsmMv7jIlD/IKYQpQ==
@@ -1568,6 +1559,15 @@
     "@jest/types" "^26.6.2"
     "@types/istanbul-lib-coverage" "^2.0.0"
     collect-v8-coverage "^1.0.0"
+
+"@jest/test-result@^24.9.0":
+  version "24.9.0"
+  resolved "https://registry.npmjs.org/@jest/test-result/-/test-result-24.9.0.tgz"
+  integrity sha512-XEFrHbBonBJ8dGp2JmF8kP/nQI/ImPpygKHwQ/SY+es59Z3L5PI4Qb9TQQMAEeYsThG1xF0k6tmG0tIKATNiiA==
+  dependencies:
+    "@jest/console" "^24.9.0"
+    "@jest/types" "^24.9.0"
+    "@types/istanbul-lib-coverage" "^2.0.0"
 
 "@jest/test-sequencer@^26.6.3":
   version "26.6.3"
@@ -1988,46 +1988,49 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@sa11y/assert@0.2.2-beta.0":
-  version "0.2.2-beta.0"
-  resolved "https://registry.npmjs.org/@sa11y/assert/-/assert-0.2.2-beta.0.tgz"
-  integrity sha512-bxO8R2v2oz1zt4h71T5+vTI4cMpbV2ZHITy2d+6zZEsqaQw0hq/wyOjpOhQ3yZlGSA1YnZ+IKBS3nj9TxZjzuA==
+"@sa11y/assert@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@sa11y/assert/-/assert-3.1.0.tgz#3ea178add46f96da5f178e3f731df3d91870a6c7"
+  integrity sha512-nMVlarQBcVsBN+S0DK+YZmKc6TVpdPZuBZ5LUa2KlrOaRVASi8E6Ihyx6twAIH6q1UCElIOFIUkVL4Dd92v5Zw==
   dependencies:
-    "@sa11y/common" "0.2.5-beta.0"
-    "@sa11y/format" "0.3.3-beta.0"
-    "@sa11y/preset-rules" "0.3.2"
-    axe-core "4.1.2"
+    "@sa11y/common" "3.1.0"
+    "@sa11y/format" "3.1.0"
+    "@sa11y/preset-rules" "3.1.0"
+    axe-core "4.3.3"
 
-"@sa11y/common@0.2.5-beta.0":
-  version "0.2.5-beta.0"
-  resolved "https://registry.npmjs.org/@sa11y/common/-/common-0.2.5-beta.0.tgz"
-  integrity sha512-hkVF75QzAYANtpV9VeeFt2hCz5mtipK2AkjXwLQzh7lP/aTJUBLJnABzxDTKpgEujWVW2wy37cLxf5SsW9Ax0g==
+"@sa11y/common@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@sa11y/common/-/common-3.1.0.tgz#8255d6fd5822b36436c05f852e5f0926ed5375e6"
+  integrity sha512-KNFXEd8Ak/RrRjp2e4ZyFi7Sm1RmdTdq9IoGsQ6I5B3Cojd3KL7ie994/X5keig3/qEJBXVIHUmuNOINsShIqA==
   dependencies:
-    axe-core "4.1.2"
+    axe-core "4.3.3"
 
-"@sa11y/format@0.3.3-beta.0":
-  version "0.3.3-beta.0"
-  resolved "https://registry.npmjs.org/@sa11y/format/-/format-0.3.3-beta.0.tgz"
-  integrity sha512-3hAGmxb2OEg6jr6OsNHmoeVI4K/VZs8N5P3OSJkzwqVNUE2cLc+T0to+wIXr4lzAlSQSBLHIfs8QtDqiAW6XzA==
+"@sa11y/format@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@sa11y/format/-/format-3.1.0.tgz#51b1b74066f9acc514aebccc00931b212d08e374"
+  integrity sha512-eunvYyMio/o+BPH65mZHdcphgwOzlLmspDrGx0OaSB45IlqbKlkbg0Q8blNi2+cjJeL20UUOl+JRuRqQ2DR6Cg==
   dependencies:
-    axe-core "4.1.2"
+    "@sa11y/common" "3.1.0"
+    "@sa11y/preset-rules" "3.1.0"
+    axe-core "4.3.3"
 
-"@sa11y/jest@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@sa11y/jest/-/jest-0.3.0.tgz"
-  integrity sha512-NoXQ3rMHUkxla7C8IfjUFDCboyKbtkPUVtfDcBiII6LISYavPUe4KyESyXk2U0fVQT+h+PXWVDk5XYweQqSy2w==
+"@sa11y/jest@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@sa11y/jest/-/jest-3.1.0.tgz#5e7bd8bc728a84a241273daa3bfefc0b033e0e90"
+  integrity sha512-DOiIy4JmWCc8BsFz+C5dKoJW6Am3sdstg3SRtcdPXXuo/h1kAC6M892lgHeKbJjLHaO9xnLtPdcGEJ10+QtUyA==
   dependencies:
-    "@sa11y/assert" "0.2.2-beta.0"
-    "@sa11y/format" "0.3.3-beta.0"
-    "@sa11y/preset-rules" "0.3.2"
+    "@jest/test-result" "26.6.2"
+    "@sa11y/assert" "3.1.0"
+    "@sa11y/format" "3.1.0"
+    "@sa11y/preset-rules" "3.1.0"
     jest-matcher-utils "26.6.2"
 
-"@sa11y/preset-rules@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.npmjs.org/@sa11y/preset-rules/-/preset-rules-0.3.2.tgz"
-  integrity sha512-hqQboQr2D8FfB5AJMv/0WNaJ0AxYe0WsO5Pz8uov3zZRUCV4b+q5EjdtuenRU7TP4AlcMJudZpQdR54GTHwpUw==
+"@sa11y/preset-rules@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@sa11y/preset-rules/-/preset-rules-3.1.0.tgz#7bcccd0a06ede706b43acf9e968863c0973a6d47"
+  integrity sha512-Vcw0ALZPNWZELe+iA5/YPTU7FyWXq3qCMuYqVWlDdm6ar871Hh/TyAa/6zUkzWseuCTzDSjQGdaOArPtlNKq0A==
   dependencies:
-    axe-core "4.1.2"
+    "@sa11y/common" "3.1.0"
 
 "@salesforce/eslint-config-lwc@^0.9.0":
   version "0.9.0"
@@ -2859,10 +2862,10 @@ aws4@^1.8.0:
   resolved "https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
-axe-core@4.1.2:
-  version "4.1.2"
-  resolved "https://registry.npmjs.org/axe-core/-/axe-core-4.1.2.tgz"
-  integrity sha512-V+Nq70NxKhYt89ArVcaNL9FDryB3vQOd+BFXZIfO3RP6rwtj+2yqqqdHEkacutglPaZLkJeuXKCjCJDMGPtPqg==
+axe-core@4.3.3:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.3.3.tgz#b55cd8e8ddf659fe89b064680e1c6a4dceab0325"
+  integrity sha512-/lqqLAmuIPi79WYfRpy2i8z+x+vxU3zX2uAm0gs1q52qTuKwolOj1P8XbufpXcsydrpKx2yGn2wzAnxCMV86QA==
 
 babel-compat@0.22.1:
   version "0.22.1"
